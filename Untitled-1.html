@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>test 2</title>
+        <link rel="stylesheet" href="mycss.css" type="text/css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Products</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                    <a href="">Shop Now</a>
+                </li>
+                <span></span>
+            </ul>
+        </nav>
+        <section class="page">
+
+           
+        <section class="whole-circle-container">
+            
+            <div class="circle-container"> 
+                <div class="circle" id="circles"> 
+                    <img src="image/banner3.png" class="picture one" id="image1" alt="shoe"> 
+                    <img src="image/one.png" class="picture two" id="image2" alt="iphone"> 
+                    <img src="image/banner2.png" class="picture three" id="image3" alt="dress"> 
+                    <img src="image/nokia-air.png" class="picture four" id="image4"> 
+                </div> 
+            </div>
+            </section>
+
+            <section class="container">
+                
+                <div class="slider-wrapper">
+                    
+                    <div class="slider">
+                        
+                        <img src="image/back 6.jpg" alt="" id="slide-1">
+                        <img src="image/back 7.jpg" alt="" id="slide-2">
+                        <img src="image/back 15.jpg" alt="" id="slide-3">
+                        <img src="image/back 14.jpg" alt="" id="slide-4">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1" onclick="myFunc1()" ></a>
+                        <a href="#slide-2" onclick="myFunc2()"></a>
+                        <a href="#slide-3" onclick="myFunc3()"></a>
+                        <a href="#slide-4" onclick="myFunc4()"></a>
+                    </div>
+                    <div class="textbox1">
+                        <div class="text-slider">
+                            <h1 class="t1" id="slide-1"> ANTENG HOP</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, minus temporibus,
+                                 <br> vitae facilis sit, et veniam ea quia iusto maxime  voluptatem omnis dolores impedit? 
+                                 <br> Dolorem consectetur laudantium quo soluta nam. Lorem ipsum, dolor 
+                                 sit amet consectetur adipisicing elit. Id rem alias mollitia, minima culpa et quo earum deserunt placeat, expedita aliquid laboriosam sed cupiditate  
+                                 commodi excepturi? <br> Veritatis incidunt dolorem numquam!</p>
+
+                                 <h1 class="button"> Order Now</h1>
+                        </div>
+                       
+                    </div>
+
+                 </div>
+        </section>
+    </section>
+    <footer></footer>
+
+        
+
+        <script>
+
+            let container = document.getElementById("circles");
+            var  image1 =document.getElementById("image1");
+            var  image2 =document.getElementById("image2");
+            var  image3 =document.getElementById("image3");
+            var  image4 =document.getElementById("image4");
+            var text1 = document.getElementById("text1");
+            var text2 = document.getElementById("text2");
+            const back = document.getElementById("navbar");
+
+            
+
+            function myFunc1() {
+                container.style.rotate = "0deg";
+                image2.style.opacity ="0.2";
+                image3.style.opacity ="0.2";
+                image4.style.opacity ="0.2";
+                image1.style.opacity ="1";
+                text2.style.transform = "translateX(100px)";
+               
+           
+              
+              
+
+             };
+            function myFunc2() {
+                container.style.rotate = "90deg";
+                image1.style.opacity ="0.2";
+                image3.style.opacity ="1";
+                image4.style.opacity ="0.2";
+                image2.style.opacity = "0.2";
+                image4.style.zIndex = '-20';
+                
+
+            };
+            function myFunc3() {
+                container.style.rotate = "180deg";
+                image1.style.opacity ="0.2";
+                image3.style.opacity ="0.2";
+                image4.style.opacity ="1";
+                image2.style.opacity = "0.2";
+
+            };
+            function myFunc4() {
+                container.style.rotate = "310deg";
+                image1.style.opacity ="0.2";
+                image3.style.opacity ="0.2";
+                image4.style.opacity ="0.2";
+                image2.style.opacity = "1";
+
+            };
+        </script>
+    </body>
+</html>
